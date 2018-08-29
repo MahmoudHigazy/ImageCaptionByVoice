@@ -54,7 +54,7 @@ Inception-GRU  model: 0.891, 0.241, 0.515, 0.287
 
 # 2. Training
  
- 2.1 Prepare the Training Data
+ 2.1. Prepare the Training Data
  
  downloading dataset
  
@@ -87,7 +87,7 @@ Inception-GRU  model: 0.891, 0.241, 0.515, 0.287
   python3 build_mscoco_data.py --train_image_dir="${TRAIN_IMAGE_DIR}" --val_image_dir="${VAL_IMAGE_DIR}"   --train_captions_file="${TRAIN_CAPTIONS_FILE}"   --val_captions_file="${VAL_CAPTIONS_FILE}"   --output_dir="${OUTPUT_DIR}" --word_counts_output_file="${OUTPUT_DIR}/word_counts.txt" --train_shards=256 --val_shards=4 --test_shards=8
 ```
 
- 2.2 Download the Inception v3 Checkpoint
+ 2.2. Download the Inception v3 Checkpoint
   
   Location to save the Inception v3 checkpoint.
   ```
@@ -101,7 +101,7 @@ Inception-GRU  model: 0.891, 0.241, 0.515, 0.287
   
   rm "inception_v3_2016_08_28.tar.gz”
 ```
-2.3 Training a Model
+2.3. Training a Model
   ```
   MODEL_DIR="${HOME}/im2txt/model"
   
@@ -115,7 +115,7 @@ Inception-GRU  model: 0.891, 0.241, 0.515, 0.287
 
 # 3. Testing
   
-  3.1 Test one image (using GUI)
+  3.1. Test one image (using GUI)
    
    Press “Browse” button and browse an image anywhere on your PC.
    
@@ -123,7 +123,7 @@ Inception-GRU  model: 0.891, 0.241, 0.515, 0.287
    
    Press “Read Caption” button and get the result as a sound.
   
-  3.2 Test a folder of images
+  3.2. Test a folder of images
     
    run run_inference script:
   ```  
